@@ -18,11 +18,51 @@
 <body>
 	<!-- <script src="common/js/word.js"></script> -->
 	<!-- <script src="common/js/timeTable.js"></script> -->
-	<script src="common/js/number_baseball.js"></script>
+	<!-- <script src="common/js/number_baseball.js"></script> -->
 	<!-- <script src='common/js/tictaktalk.js'></script> -->
-	<div class="bonusNumber"></div>
-	<div id="lottoResult"></div>
-	
+	<!-- <div class="bonusNumber"></div>
+	<div id="lottoResult"></div> -->
 	<!-- <script src="common/js/lotto.js"></script> -->
+
+	<!-- Hand Game -->
+	<!-- <div class="handGame">
+		<style>
+			.computer{width:273px; height:340px; overflow:hidden;}
+			.computer{background:url(common/images/img_hand_game.jpeg) no-repeat 0 0;}
+		</style>
+		<div class="computer">
+		</div>
+		<div class="myTurn">
+			<button class='btn'>가위</button>
+			<button class='btn'>바위</button class='btn'>
+			<button class='btn'>보</button class='btn'>
+		</div>
+		<div>
+			컴퓨터의 선택 : <span class="myResult"></span><br />
+			나의 선택 : <span class="myResult"></span><br />
+			결과 : <span class="finalResult"></span>
+		</div>
+	</div>
+	<script src="common/js/handgame.js"></script> -->
+
+	<!-- Mine Game -->
+	<style>
+		table{border-collapse:collapse;}
+		td{width:20px; height:20px;}
+	</style>
+	<input id='row' type="number" value="10" />
+	<input id='col' type="number" value="10" />
+	<input id='mine' type="number" value="20" />
+	<button id='maker'>생성</button>
+	<table id='tableWrap'>
+		<thead>
+			<tr>
+				<th scope="col"></th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+	<script src='common/js/mine.js'></script>
 </body>
 </html>

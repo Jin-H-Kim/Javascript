@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<style>
+		td{
+			border: 1px solid red; 
+			width: 50px; 
+			height: 50px;
+			text-align: center;
+			font-weight: bold;
+		}
+    </style>
+    <script>
+        var outV = 'a';
+        function inVfn(){
+            console.log(outV)
+            return outV;
+            
+        }
+        inVfn();
+
+        function myFn(){
+            var fn = scopeFn(2, 2)
+            console.log('first return : ' + fn)
+            reFn(fn)
+            console.log('second return : ' +  reFn(fn))
+        }
+        function scopeFn(a, b){
+            var result = a - b;
+            console.log('result : ' + result)
+            return a * b
+        }
+        function reFn(a){
+            return a * 10;
+        }
+        myFn()
+    </script>
+</head>
+<body>
+	
+</body>
+</html>
